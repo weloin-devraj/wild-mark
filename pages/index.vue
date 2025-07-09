@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <Navbar/>
+        <Hero/>
+        <DemoProducts/>
+        <HuntingJacket/>
+        <WildlifePage/>
+    </div>
+</template>

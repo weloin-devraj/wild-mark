@@ -1,0 +1,64 @@
+<template>
+  <div
+    class="min-h-screen overflow-x-hidden oveflow-x-hidden relative overflow-y-hidden bg-[#FFFFFF] "
+  >
+    <!-- picture center -->
+    <div class="  absolute bottom-0 left-40  ">
+      <img class="h-[15rem] w-[15rem]" src="/images/deer.png" alt="" />
+    </div>
+    <div class="image2 absolute  left-[40%] top-[20%]  ">
+        <h1 class="text-4xl text-orange-700 font-bold font-cedarville mt-5 ml-8">Adventures</h1>
+        <div class="h-[18rem] w-[13rem] -rotate-[7deg] mt-2 overflow-hidden rounded-xl outline outline-solid outline-white outline-8">
+            <img src="/images/mountainman.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="h-[28rem] flex justify-between pt-16 ">
+      <div class="flag mt-8 ml-14">
+        <img class="h-[12rem]" src="/images/redFlag.jpg" alt="" />
+        <div class="mt-4 text-lg text-[#321F08]">
+          <h1><span class="font-bold">Hunting,Camping & Outdoor</span> Gear</h1>
+          <h1>Thats Engineered To Perform</h1>
+        </div>
+      </div>
+      <div class="subtitle text-end mr-16">
+        <h1
+          class="text-8xl font-bold text-[#45280B] font-anton tracking-wider scale-x-120 scale-y-75 leading-tight mb-[-1rem]"
+        >
+          DESIGNED <br />
+          FOR <span class="text-[#B0AA9A]">TOUGH</span> <br />
+          CLIMATES
+        </h1>
+        <span class="text-[#45280B] text-xl mt-[-0.5rem] block">
+          Hunting jackets offer
+          <span class="font-bold">synthetic insulation</span>
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between items-center mr-16 mt-8">
+        <h1
+          class="text-8xl font-bold text-[#81C049] font-anton tracking-widest"
+        >
+          ELEVATE -
+        </h1>
+        <PrimaryButton
+          class="h-[50px] text-md w-56 mr-2 "
+          title="EXPLORE JACKETS"
+          backgroundColor="#45280B"
+          text_color="white"
+          fontt="bold"
+          icon="/icons/upArrow.svg"
+        />
+      </div>
+      <div>
+        <h1
+          class="text-8xl font-bold mr-16 text-[#FF7138] font-anton tracking-widest flex justify-end"
+        >
+          HUNTING
+        </h1>
+      </div>
+    </div>
+  </div>
+</template>
