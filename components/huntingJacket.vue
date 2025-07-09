@@ -4,11 +4,11 @@
   >
     <!-- picture center -->
     <div class="  absolute bottom-0 left-40  ">
-      <img class="h-[15rem] w-[15rem]" src="/images/deer.png" alt="" />
+      <img class="h-[20rem] w-[20rem]" src="/images/deer.png" alt="" />
     </div>
-    <div class="image2 absolute  left-[40%] top-[20%]  ">
+    <div class="image2 absolute  left-[35%] top-[15%]  ">
         <h1 class="text-4xl text-orange-700 font-bold font-cedarville mt-5 ml-8">Adventures</h1>
-        <div class="h-[18rem] w-[13rem] -rotate-[7deg] mt-2 overflow-hidden rounded-xl outline outline-solid outline-white outline-8">
+        <div class="h-[23rem] w-[18rem] -rotate-[7deg] mt-2 overflow-hidden rounded-xl outline outline-solid outline-white outline-8">
             <img src="/images/mountainman.jpg" alt="">
         </div>
     </div>
@@ -37,9 +37,9 @@
     </div>
 
     <div>
-      <div class="flex justify-between items-center mr-16 mt-8">
+      <div class="flex justify-between items-center mr-16 mt-8 mb-0 pb-0">
         <h1
-          class="text-8xl font-bold text-[#81C049] font-anton tracking-widest"
+          class="text-[16rem] font-bold text-[#81C049] font-anton tracking-widest"
         >
           ELEVATE -
         </h1>
@@ -54,7 +54,7 @@
       </div>
       <div>
         <h1
-          class="text-8xl font-bold mr-16 text-[#FF7138] font-anton tracking-widest flex justify-end"
+          class="text-[16rem] font-bold mr-16 text-[#FF7138] font-anton tracking-widest flex justify-end mt-0 pt-0"
         >
           HUNTING
         </h1>

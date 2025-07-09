@@ -53,7 +53,7 @@
         <div>
           <img
             class="h-[450px]  object-contain"
-            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ5Mkyb_tP6gRXLzJ4jmgVX15NpfwmJ8yeumltaOTg40TWPA8-DT_ALh8UsB3fDohFF80wBIFCnOpWdfpys4nBH_52hCMzHYf9QXZ68hhdjt8xq2Ed0mABt4Q"
+            :src="picture"
             alt="Waterproof Jacket"
           />
         </div>

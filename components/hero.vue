@@ -1,7 +1,7 @@
 <template>
   <div class="px-4 bg-white mb-2 h-[89vh] overflow-x-hidden">
     <div
-      class="h-full w-full rounded-2xl relative"
+      class="h-full w-full rounded-2xl  relative"
       style="
         background-image: url('/images/hero5.jpg');
         background-size: cover;
@@ -30,7 +30,7 @@
       </div>
 
       <!-- Subtext -->
-      <div class="absolute xl:top-[32rem] lg:top-[28rem] top-[27rem] left-16 w-full max-w-[400px] text-white font-semibold ">
+      <div class="absolute text-md xl:top-[43rem] lg:top-[28rem] top-[27rem] left-16 w-full max-w-[400px] text-white font-semibold ">
         <span>Range of Accessories, Hunting- Camping Gears,</span><br />
         <span>Tents, Outdoor Clothing, Sleeping Bags etc.</span>
       </div>

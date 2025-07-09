@@ -53,7 +53,9 @@
     <!-- Cards Section -->
     <div class="p-6  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
       <div v-for="n in 4" :key="n">
-        <Card heading="WATERFPROOF JACKET" />
+        <Card heading="WATERFPROOF JACKET" 
+        picture="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ5Mkyb_tP6gRXLzJ4jmgVX15NpfwmJ8yeumltaOTg40TWPA8-DT_ALh8UsB3fDohFF80wBIFCnOpWdfpys4nBH_52hCMzHYf9QXZ68hhdjt8xq2Ed0mABt4Q"
+        />
       </div>
     </div>
   </div>

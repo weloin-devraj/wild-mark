@@ -5,5 +5,7 @@
         <DemoProducts/>
         <HuntingJacket/>
         <WildlifePage/>
+        <HuntingCamping/>
+        <MountainPage/>
     </div>
 </template>

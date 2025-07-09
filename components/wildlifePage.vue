@@ -51,16 +51,16 @@
             Weather Gear, Clothing, Tents, Mats, <br />
             Sleeping Bags
           </h1>
-          <div class="w-full sm:w-auto flex justify-start sm:justify-end gap-4 mt-4 sm:mt-0">
+          <div class="w-full sm:w-auto flex justify-start sm:justify-end  mt-4 sm:mt-0">
             <button
-              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-3 m-[4px]"
+              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-3 m-[12px]"
             >
-              <img src="/icons/leftPointer.svg" alt="" />
+              <img src="/icons/leftPointer2.svg" alt="" />
             </button>
             <button
-              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-3 m-[4px]"
+              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-3 m-[12px]"
             >
-              <img src="/icons/rightPointer.svg" alt="" />
+              <img class="" src="/icons/rightPointer2.svg" alt="" />
             </button>
           </div>
         </div>
@@ -74,7 +74,7 @@
             alt=""
           />
 
-          <div class="flex items-center mt-2">
+          <div class="flex items-center mt-5">
             <span class="text-xl sm:text-2xl text-[#EADE49] font-bold w-auto">Adventures Gears</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
