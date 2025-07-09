@@ -23,7 +23,7 @@
       </div>
       <div class="subtitle text-end mr-16">
         <h1
-          class="text-8xl font-bold text-[#45280B] font-anton tracking-wider scale-x-120 scale-y-75 leading-tight mb-[-1rem]"
+          class="text-[8rem] font-bold text-[#45280B] font-anton tracking-wider scale-x-120 scale-y-75 leading-tight mb-[-1rem]"
         >
           DESIGNED <br />
           FOR <span class="text-[#B0AA9A]">TOUGH</span> <br />
@@ -31,7 +31,7 @@
         </h1>
         <span class="text-[#45280B] text-xl mt-[-0.5rem] block">
           Hunting jackets offer
-          <span class="font-bold">synthetic insulation</span>
+          <span class="font-bold text-2xl">synthetic insulation</span>
         </span>
       </div>
     </div>
@@ -44,7 +44,7 @@
           ELEVATE -
         </h1>
         <PrimaryButton
-          class="h-[50px] text-md w-56 mr-2 "
+          class="h-[80px] text-2xl w-[20rem] mr-2 "
           title="EXPLORE JACKETS"
           backgroundColor="#45280B"
           text_color="white"

@@ -7,5 +7,6 @@
         <WildlifePage/>
         <HuntingCamping/>
         <MountainPage/>
+        <Footer/>
     </div>
 </template>
