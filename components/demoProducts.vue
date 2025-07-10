@@ -13,7 +13,7 @@
             <span class="flex items-start"
               >FOR YOU
               <span
-                class="text-2xl text-orange-700 font-bold font-cedarville mt-5"
+                class="text-2xl text-orange-700 font-magnite  mt-5"
                 >TRENDING</span
               ></span
             >

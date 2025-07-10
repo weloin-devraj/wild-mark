@@ -61,7 +61,7 @@
       </div>
       <div class="text-center mt-48">
         <h1
-          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-orange-700 font-bold font-cedarville mt-5 ml-4 bottom-1 right-52"
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-orange-700 font-bold font-magnite  mt-5 ml-4 bottom-1 right-52"
         >
           MOUNTAINS
         </h1>
