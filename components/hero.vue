@@ -10,7 +10,7 @@
     >
       <!-- Hero Text -->
       <div
-        class="p-8 w-full max-w-[700px] text-white font-bold font-sans absolute top-12 left-8 text-5xl md:text-6xl lg:text-7xl"
+        class="p-8 w-full max-w-[800px] text-white font-bold font-sans absolute top-12 left-8 text-5xl md:text-6xl lg:text-8xl"
       >
         <div>ADVENTURE</div>
         <div>BEGINS WITH</div>
@@ -18,9 +18,9 @@
       </div>
 
       <!-- Button -->
-      <div class="absolute top-[21rem] left-16">
+      <div class="absolute top-[27rem] left-16">
         <PrimaryButton
-          class="h-[60px] text-2xl w-50"
+          class="h-[70px] text-2xl w-50"
           title="EXPLORE ALL"
           backgroundColor="white"
           text_color="#422006"
@@ -30,7 +30,7 @@
       </div>
 
       <!-- Subtext -->
-      <div class="absolute text-md xl:top-[43rem] lg:top-[28rem] top-[27rem] left-16 w-full max-w-[400px] text-white font-semibold ">
+      <div class="absolute text-md xl:top-[44rem] lg:top-[28rem] top-[27rem] left-16 w-full max-w-[400px] text-white font-semibold ">
         <span>Range of Accessories, Hunting- Camping Gears,</span><br />
         <span>Tents, Outdoor Clothing, Sleeping Bags etc.</span>
       </div>
