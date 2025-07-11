@@ -35,45 +35,97 @@
 
       <!-- Arrow Button Section -->
       <div
-        class="w-full hidden   sm:w-auto xl:flex justify-start sm:justify-end items-center gap-4 pr-5  ml-2 mt-7"
+        class="w-full hidden sm:w-auto xl:flex justify-start sm:justify-end items-center gap-4 pr-5 ml-2 mt-7"
       >
         <button
-          class="outline outline-1 hover:bg-slate-50 hover:cursor-default rounded-full p-4"
+        @click="swiper.prev()"
+          class="outline outline-1 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
         >
           <img src="/icons/leftPointer.svg" alt="" />
         </button>
         <button
-          class="outline outline-2 hover:bg-slate-50 hover:cursor-default rounded-full p-4"
+          @click="goNext"
+          class="outline outline-2 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
         >
           <img src="/icons/rightPointer.svg" alt="" />
         </button>
       </div>
     </div>
     <div
-        class="w-full xl:hidden   sm:w-auto flex justify-end   items-center gap-4 pr-5  ml-2 mt-7"
+      class="w-full xl:hidden sm:w-auto flex justify-end items-center gap-4 pr-5 ml-2 mt-7"
+    >
+      <button
+         @click="swiper.prev()"
+        class="outline outline-1 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
       >
-        <button
-          class="outline outline-1 hover:bg-slate-50 hover:cursor-default rounded-full p-4"
-        >
-          <img src="/icons/leftPointer.svg" alt="" />
-        </button>
-        <button
-          class="outline outline-1 hover:bg-slate-50 hover:cursor-default rounded-full p-4"
-        >
-          <img src="/icons/rightPointer.svg" alt="" />
-        </button>
+        <img src="/icons/leftPointer.svg" alt="" />
+      </button>
+      <button
+          @click="goNext"
+        class="outline outline-1 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
+      >
+        <img src="/icons/rightPointer.svg" alt="" />
+      </button>
     </div>
 
     <!-- Cards Section -->
-    <div class="p-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
-      <div v-for="n in 4" :key="n">
-        <Card
-          heading="WATERFPROOF JACKET"
-          picture="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ5Mkyb_tP6gRXLzJ4jmgVX15NpfwmJ8yeumltaOTg40TWPA8-DT_ALh8UsB3fDohFF80wBIFCnOpWdfpys4nBH_52hCMzHYf9QXZ68hhdjt8xq2Ed0mABt4Q"
-          n
-           :selected="n === 2 ? 'no' : 'yes'"
-        />
+    
+      <div >
+        <ClientOnly>
+        <swiper-container
+         
+          ref="containerRef"
+          slides-per-view="4"
+          space-between="2"
+          
+          
+        >
+          <swiper-slide v-for="n in 8" :key="n">
+            <Card
+              heading="WATERFPROOF JACKET"
+              picture="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ5Mkyb_tP6gRXLzJ4jmgVX15NpfwmJ8yeumltaOTg40TWPA8-DT_ALh8UsB3fDohFF80wBIFCnOpWdfpys4nBH_52hCMzHYf9QXZ68hhdjt8xq2Ed0mABt4Q"
+              n
+              :selected="n === 2 ? 'no' : 'yes'"
+            />
+            <!-- Slide {{ idx + 1 }} -->
+          </swiper-slide>
+        </swiper-container>
+      </ClientOnly>
       </div>
     </div>
-  </div>
+  
 </template>
+
+<script setup lang="ts">
+const containerRef = ref<HTMLSwiperElement | null>(null);
+
+function goNext() {
+  if (containerRef.value?.swiper) {
+    containerRef.value.swiper.slideNext();
+  }
+}
+
+function goPrev() {
+  if (containerRef.value?.swiper) {
+    containerRef.value.swiper.slidePrev();
+  }
+}
+const slides = ref(Array.from({ length: 10 }))
+
+const swiper = useSwiper(containerRef)
+
+onMounted(() => {
+  // Access Swiper instance
+  // Read more about Swiper instance: https://swiperjs.com/swiper-api#methods--properties
+  console.log(swiper.instance)
+})
+
+</script>
+
+
+<style lang="css">
+
+
+  
+</style>
+
