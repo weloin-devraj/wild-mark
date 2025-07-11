@@ -3,44 +3,47 @@
     class="bg-red-500 min-h-screen flex flex-col lg:flex-row overflow-x-hidden"
   >
     <div
-      class="left bg-[#015036] p-6 sm:p-10 md:p-16 lg:p-24 w-full lg:w-[60%] flex-shrink-0"
+      class="left bg-[#015036] p-6 sm:p-10 md:p-16 lg:p-24 w-full lg:w-[55.5%] flex-shrink-0"
     >
       <div class="sec1 flex items-center flex-wrap">
-        <div class="flex h-20 w-20 flex-shrink-0">
+        <div class="flex h-20 w-20 flex-shrink-0 ">
           <img
             class="rounded-full outline outline-[#015036] outline-4"
             src="/images/roboOrange.webp"
             alt=""
           />
           <img
-            class="rounded-full outline outline-[#015036] outline-4 -ml-3"
+            class="rounded-full outline outline-[#015036] outline-4 -ml-3 "
             src="/images/roboYello.avif"
             alt=""
           />
 
           <img
-            class="rounded-full outline outline-[#015036] outline-4 -ml-3"
+            class="rounded-full outline outline-[#015036] outline-4 -ml-3 "
             src="/images/roboOrange.webp"
             alt=""
           />
         </div>
         <div class="ml-4 sm:ml-10 md:ml-20 lg:ml-40 flex-grow">
-          <h1 class="text-white text-lg sm:text-xl font-semibold">
+          <h1 class="text-[#E8FFF9] text-lg sm:text-2xl ">
             Planning adventures with insights <br />
             from overnight
           </h1>
         </div>
       </div>
 
-      <div class="ml-0 sm:ml-4 md:ml-8 lg:ml-9 relative mt-8">
+      <div class="ml-0 sm:ml-4 md:ml-8 lg:ml-9 relative mt-6">
         <h1
-          class="font-anton tracking-widest font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-9xl text-white scale-y-75 scale-x-100 lg:scale-x-110"
+          class="font-anton  font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[9rem] text-white scale-y-[65%]  scale-x-110  lg:scale-x-110 "
         >
-          ADVENTURE <br />
-          FOR <span class="text-[#E6FF80]">LIFE</span>
+          ADVENTURE<br />
+          <div class="mt-4">
+
+            FOR <span class="text-[#E6FF80]">LIFE</span>
+          </div>
         </h1>
         <span
-          class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-orange-700 font-magnite  font-cedarville mt-5 ml-4 absolute bottom-1 right-52 -rotate-6"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#FC6936] font-magnite   mt-5 ml-4 absolute bottom-7 right-52 -rotate-6"
           >Wildlife</span
         >
       </div>
@@ -50,7 +53,7 @@
           class="flex justify-between items-start mt-10 sm:mt-16 md:mt-20 flex-wrap"
         >
           <h1
-            class="text-lg sm:text-xl md:text-2xl font-bold -ml-0 sm:-ml-2 md:-ml-4 lg:-ml-6 scale-x-100 lg:scale-x-90 text-white flex-shrink-0"
+            class="text-lg sm:text-xl md:text-2xl  -ml-0 sm:-ml-2 md:-ml-4 lg:-ml-6 scale-x-100 lg:scale-x-90 text-[#E8FFF9] flex-shrink-0"
           >
             Weather Gear, Clothing, Tents, Mats, <br />
             Sleeping Bags
@@ -59,12 +62,12 @@
             class="w-full sm:w-auto flex justify-start sm:justify-end mt-4 sm:mt-0"
           >
             <button
-              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-3 m-[12px]"
+              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-5 m-[12px]"
             >
               <img src="/icons/leftPointer2.svg" alt="" />
             </button>
             <button
-              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-3 m-[12px]"
+              class="outline outline-slate-300 outline-2 hover:outline-2 hover:cursor-default rounded-full p-5 m-[12px]"
             >
               <img class="" src="/icons/rightPointer2.svg" alt="" />
             </button>
@@ -79,12 +82,16 @@
             image_url="/images/fieldPic1.jpg"
             title="ADVENTURES GEARS"
           />
+          <SwiperImg
+            image_url="/images/fieldPic2.jpg"
+            title="ADVENTURES GEARS"
+          />
         
        
       </div>
     </div>
     <div
-      class="right w-full lg:w-[40%] h-64 lg:h-auto"
+      class="right w-full lg:w-[44.5%] h-64 lg:h-auto"
       style="
         background-image: url('/images/fieldMan.avif');
         background-size: cover;

@@ -5,7 +5,7 @@
             
             <div class="first">
                 <div>
-                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/whiteicon.png" alt="White Icon">
+                    <img class="h-[4rem] sm:h-[5rem] " src="/icons/ecoFriendly.svg" alt="White Icon">
                     <div class="flex flex-col gap-4 sm:gap-8 mt-6">
                         <h1 class="text-2xl sm:text-3xl font-extrabold">Eco-Friendly</h1>
                         <h1 class="text-[#CFDAF4] text-sm sm:text-base">Commited to conservation, using green <br class="hidden sm:block"> goodas for greater future</h1>
@@ -32,7 +32,7 @@
 
             <div class="second">
                 <div>
-                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/whiteicon.png" alt="White Icon">
+                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/recycle.svg" alt="White Icon">
                     <div class="flex flex-col gap-4 sm:gap-8 mt-6">
                         <h1 class="text-2xl sm:text-3xl font-extrabold">Circular Economy</h1>
                         <h1 class="text-[#CFDAF4] text-sm sm:text-base">Promoting sustainability by reuse,<br class="hidden sm:block"> recycling, & ethical manufacturing</h1>
@@ -54,7 +54,7 @@
 
             <div class="third">
                 <div>
-                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/whiteicon.png" alt="White Icon">
+                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/planet.svg" alt="White Icon">
                     <div class="flex flex-col gap-4 sm:gap-8 mt-6">
                         <h1 class="text-2xl sm:text-3xl font-extrabold">1% for the Planet</h1>
                         <h1 class="text-[#CFDAF4] text-sm sm:text-base">Sharing 1% of our earnings to help<br class="hidden sm:block"> sustainability & conservation</h1>
@@ -72,7 +72,7 @@
 
             <div class="fourth">
                 <div>
-                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/whiteicon.png" alt="White Icon">
+                    <img class="h-[4rem] sm:h-[5rem]" src="/icons/leaf.svg" alt="White Icon">
                     <div class="flex flex-col gap-4 sm:gap-8 mt-6">
                         <h1 class="text-2xl sm:text-3xl font-extrabold">Traceability</h1>
                         <h1 class="text-[#CFDAF4] text-sm sm:text-base">Ensure transparency at all stages,<br class="hidden sm:block"> sourcing to manufacturing</h1>

@@ -6,9 +6,9 @@
       alt=""
     />
 
-    <div class="items-center mt-5">
+    <div class="items-center justify-end mt-5">
       <button
-        class="text-xl sm:text-2xl text-[#EADE49] font-bold flex uppercase gap-8"
+        class="text-xl  text-[#EADE49] font-bold flex uppercase gap-32"
       >
         {{ title ? title : "send props"
         }}<svg
