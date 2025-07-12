@@ -35,50 +35,48 @@
 
       <!-- Arrow Button Section -->
       <div
-        class="w-full hidden sm:w-auto xl:flex justify-start sm:justify-end items-center gap-4 pr-5 ml-2 mt-7"
+        class="w-full sm:w-auto flex justify-start sm:justify-end items-center gap-4 pr-5 ml-2 mt-7"
       >
         <button
-        @click="swiper.prev()"
-          class="outline outline-1 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
+          @click="swiper.prev()"
+          :class="[
+            '  rounded-full p-4',
+            swiper.isBeginning.value == true
+              ? 'outline outline-1 outline-slate-500'
+              : 'outline outline-1 outline-[#000000]',
+            swiper.isBeginning.value == true
+              ? 'cursor-default'
+              : 'cursor-pointer',
+            swiper.isBeginning.value == false ? 'hover:bg-slate-50' : '',
+          ]"
         >
           <img src="/icons/leftPointer.svg" alt="" />
         </button>
+        {{ console.log(activeIndex) }}
         <button
-          @click="goNext"
-          class="outline outline-2 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
+          @click="swiper.next()"
+          :class="[
+            '  rounded-full p-4',
+            swiper.isEnd.value == true
+              ? 'outline outline-1 outline-slate-500'
+              : 'outline outline-1 outline-[#000000]',
+            swiper.isEnd.value == true ? 'cursor-default' : 'cursor-pointer',
+            swiper.isEnd.value == false ? 'hover:bg-slate-50' : '',
+          ]"
         >
           <img src="/icons/rightPointer.svg" alt="" />
         </button>
       </div>
     </div>
-    <div
-      class="w-full xl:hidden sm:w-auto flex justify-end items-center gap-4 pr-5 ml-2 mt-7"
-    >
-      <button
-         @click="swiper.prev()"
-        class="outline outline-1 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
-      >
-        <img src="/icons/leftPointer.svg" alt="" />
-      </button>
-      <button
-          @click="goNext"
-        class="outline outline-1 hover:bg-slate-50 hover:cursor-pointer rounded-full p-4"
-      >
-        <img src="/icons/rightPointer.svg" alt="" />
-      </button>
-    </div>
 
     <!-- Cards Section -->
-    
-      <div >
-        <ClientOnly>
+
+    <div>
+      <ClientOnly>
         <swiper-container
-         
           ref="containerRef"
           slides-per-view="4"
           space-between="2"
-          
-          
         >
           <swiper-slide v-for="n in 8" :key="n">
             <Card
@@ -91,41 +89,18 @@
           </swiper-slide>
         </swiper-container>
       </ClientOnly>
-      </div>
     </div>
-  
+  </div>
 </template>
 
 <script setup lang="ts">
-const containerRef = ref<HTMLSwiperElement | null>(null);
+const containerRef = ref<HTMLSwiperElement | null>(null); 
 
-function goNext() {
-  if (containerRef.value?.swiper) {
-    containerRef.value.swiper.slideNext();
-  }
-}
-
-function goPrev() {
-  if (containerRef.value?.swiper) {
-    containerRef.value.swiper.slidePrev();
-  }
-}
-const slides = ref(Array.from({ length: 10 }))
-
-const swiper = useSwiper(containerRef)
+const swiper = useSwiper(containerRef);
 
 onMounted(() => {
-  // Access Swiper instance
-  // Read more about Swiper instance: https://swiperjs.com/swiper-api#methods--properties
-  console.log(swiper.instance)
-})
-
+  const swiperInstance = containerRef.value?.swiper;
+});
 </script>
 
-
-<style lang="css">
-
-
-  
-</style>
-
+<style lang="css"></style>
