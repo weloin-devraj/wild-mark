@@ -165,7 +165,7 @@
           class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4"
         >
           <div class="w-full md:w-auto text-center md:text-left">
-            <h1 class="text-base sm:text-xl font-bold">
+            <h1 class="text-base sm:text-2xl font-bold">
               © 2025 Rylic Studio | All Rights Reserved
             </h1>
           </div>

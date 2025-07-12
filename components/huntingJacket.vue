@@ -44,9 +44,9 @@
           ELEVATE-
         </h1>
         <PrimaryButton
-          class="h-[80px] text-2xl w-[20rem] mr-2  "
+          class="h-[80px] text-2xl w-[21rem] mr-2  "
           title="EXPLORE JACKETS"
-          backgroundColor="#412707"
+          backgroundColor="#321F08"
           text_color="white"
           fontt="bold"
           icon="/icons/upArrow.svg"
