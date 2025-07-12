@@ -2,13 +2,17 @@
   <div class="X min-h-screen flex flex-col lg:flex-row overflow-x-hidden">
     <div
       style="
-        background: radial-gradient(circle,rgba(1, 80, 54, 0.45) 9%, rgba(1, 80, 54, 1) 77%)
+        background: radial-gradient(
+          circle,
+          rgba(1, 80, 54, 0.45) 9%,
+          rgba(1, 80, 54, 1) 77%
+        );
       "
       class="left relative p-6 sm:p-10 md:p-16 lg:p-24 w-full lg:w-[55.5%] flex-shrink-0"
     >
       <div class="absolute z-[-10] top-0 bottom-0 left-0 bg-[#015036]">
         <img
-          class="invert w-full h-full mix-blend-screen brightness-[117%] "
+          class="invert w-full h-full mix-blend-screen brightness-[117%]"
           src="/images/curlyBg.jpg"
           alt=""
         />
@@ -64,15 +68,32 @@
             Sleeping Bags
           </h1>
           <div
-            class="w-full sm:w-auto flex justify-start sm:justify-end mt-4 sm:mt-0"
+            class="w-full gap-5 mr-14 sm:w-auto flex justify-start sm:justify-end mt-4 sm:mt-0"
           >
+            
             <button
-              class="outline outline-slate-300 outline-1 hover:outline-2 hover:cursor-default rounded-full p-5 m-[12px]"
+              @click="swiper.prev()"
+              :class="[
+                'rounded-full p-4',
+                swiper.isBeginning.value
+                  ? ' border-[1px] border-slate-400'
+                  : ' border-[1px] border-white',
+                swiper.isBeginning.value ? 'cursor-default' : 'cursor-pointer',
+                
+              ]"
             >
               <img src="/icons/leftPointer2.svg" alt="" />
             </button>
             <button
-              class="outline outline-slate-300 outline-2 hover:outline-2 hover:cursor-default rounded-full p-5 m-[12px]"
+              @click="swiper.next()"
+              :class="[
+                'rounded-full p-4',
+                swiper.isEnd.value
+                  ? ' border-[1px] border-slate-400'
+                  : ' border-[1px] border-white',
+                swiper.isEnd.value ? 'cursor-default' : 'cursor-pointer',
+                
+              ]"
             >
               <img class="" src="/icons/rightPointer2.svg" alt="" />
             </button>
@@ -80,9 +101,31 @@
         </div>
       </div>
 
-      <div class="flex flex-col sm:flex-row gap-6 sm:gap-10 md:gap-14 mt-9">
-        <SwiperImg image_url="/images/fieldPic1.jpg" title="ADVENTURES GEARS" />
-        <SwiperImg image_url="/images/fieldPic2.jpg" title="ADVENTURES GEARS" />
+      <div class="sm:flex-row gap-6 sm:gap-10 md:gap-14 mt-9">
+        <div>
+          <div>
+            <ClientOnly>
+              <swiper-container
+                ref="containerRef"
+                slides-per-view="2"
+                space-between="2"
+                   :free-mode="true"
+                  
+              >
+                <swiper-slide v-for="n in 5" :key="n">
+                  <SwiperImg
+                    image_url="/images/fieldPic2.jpg"
+                    title="ADVENTURES GEARS"
+                  />
+
+                  <!-- Slide {{ idx + 1 }} -->
+                </swiper-slide>
+              </swiper-container>
+            </ClientOnly>
+          </div>
+        </div>
+
+        <!-- <SwiperImg image_url="/images/fieldPic2.jpg" title="ADVENTURES GEARS" /> -->
       </div>
     </div>
     <div
@@ -98,4 +141,12 @@
 
 <script setup lang="ts">
 import SwiperImg from "./SwiperImg.vue";
+
+const containerRef = ref<HTMLSwiperElement | null>(null);
+
+const swiper = useSwiper(containerRef);
+
+onMounted(() => {
+  const swiperInstance = containerRef.value?.swiper;
+});
 </script>

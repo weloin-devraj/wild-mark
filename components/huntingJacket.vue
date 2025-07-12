@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen overflow-x-hidden pt-[100px]  relative overflow-y-hidden bg-[#FFFFFF] "
+    class="hmin-h-screen overflow-x-hidden pt-[100px]  relative overflow-y-hidden bg-[#FFFFFF] "
   >
     <!-- picture center -->
     <div class="  absolute bottom-0 left-40  z-50 ">
@@ -36,10 +36,10 @@
       </div>
     </div>
 
-    <div >
-      <div class="flex justify-between items-center mr-16 mt-8 mb-0 pb-0">
+    <div class="">
+      <div class="flex justify-between items-center mr-16 mt-8  pb-0">
         <h1
-          class="text-[18rem] font-bold text-[#81C049] font-anton -ml-14  scale-y-75 tracking-widest"
+          class="text-[18rem]  font-bold text-[#81C049] font-anton -ml-14  scale-y-75 tracking-widest"
         >
           ELEVATE-
         </h1>
@@ -52,9 +52,12 @@
           icon="/icons/upArrow.svg"
         />
       </div>
-      <div>
+      <div
+       class="scale-y-75    "
+      >
         <h1
-          class="text-[18rem] -mt-[185px] font-bold mr-24   text-[#FF7138] font-anton scale-x-125  scale-y-75 tracking-widest flex justify-end pt-0"
+          class="text-[18rem]     -mt-[185px] font-bold mr-24   text-[#FF7138] font-anton scale-x-125   tracking-widest flex justify-end pt-0"
+         
         >
           HUNTING
         </h1>

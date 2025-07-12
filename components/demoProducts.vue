@@ -40,28 +40,27 @@
         <button
           @click="swiper.prev()"
           :class="[
-            '  rounded-full p-4',
-            swiper.isBeginning.value == true
-              ? 'outline outline-1 outline-slate-500'
-              : 'outline outline-1 outline-[#000000]',
-            swiper.isBeginning.value == true
-              ? 'cursor-default'
-              : 'cursor-pointer',
-            swiper.isBeginning.value == false ? 'hover:bg-slate-50' : '',
+            'rounded-full p-4',
+            swiper.isBeginning.value
+              ? ' border-[1px] border-slate-500'
+              : ' border-[1px] border-[#000000]',
+            swiper.isBeginning.value ? 'cursor-default' : 'cursor-pointer',
+            !swiper.isBeginning.value ? 'hover:bg-slate-50' : '',
           ]"
         >
           <img src="/icons/leftPointer.svg" alt="" />
         </button>
-        {{ console.log(activeIndex) }}
+
+
         <button
           @click="swiper.next()"
           :class="[
-            '  rounded-full p-4',
-            swiper.isEnd.value == true
-              ? 'outline outline-1 outline-slate-500'
-              : 'outline outline-1 outline-[#000000]',
-            swiper.isEnd.value == true ? 'cursor-default' : 'cursor-pointer',
-            swiper.isEnd.value == false ? 'hover:bg-slate-50' : '',
+            'rounded-full p-4',
+            swiper.isEnd.value
+              ? ' border-[1px] border-slate-500'
+              : ' border-[1px] border-[#000000]',
+            swiper.isEnd.value ? 'cursor-default' : 'cursor-pointer',
+            !swiper.isEnd.value ? 'hover:bg-slate-50' : '',
           ]"
         >
           <img src="/icons/rightPointer.svg" alt="" />
@@ -71,14 +70,17 @@
 
     <!-- Cards Section -->
 
-    <div>
+    <div >
       <ClientOnly>
         <swiper-container
           ref="containerRef"
           slides-per-view="4"
           space-between="2"
+          :free-mode="true"
+          
+          
         >
-          <swiper-slide v-for="n in 8" :key="n">
+          <swiper-slide v-for="n in 8" :key="n" >
             <Card
               heading="WATERFPROOF JACKET"
               picture="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ5Mkyb_tP6gRXLzJ4jmgVX15NpfwmJ8yeumltaOTg40TWPA8-DT_ALh8UsB3fDohFF80wBIFCnOpWdfpys4nBH_52hCMzHYf9QXZ68hhdjt8xq2Ed0mABt4Q"
@@ -94,7 +96,7 @@
 </template>
 
 <script setup lang="ts">
-const containerRef = ref<HTMLSwiperElement | null>(null); 
+const containerRef = ref<HTMLSwiperElement | null>(null);
 
 const swiper = useSwiper(containerRef);
 
