@@ -14,6 +14,7 @@ export default {
         anton: ['Anton', 'sans-serif'],
         cedarville: ['Edu NSW ACT Cursive', 'cursive'],
         magnite: ['MagniteLavingo', 'sans-serif'],
+        gabarito:['Gabarito','sans-serif']
 
       },
     },
