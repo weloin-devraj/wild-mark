@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 bg-white mb-2 h-[89vh] overflow-x-hidden overflow-y-hidden">
+  <div class=" primary-padding  bg-white mb-2 h-[89vh] overflow-x-hidden overflow-y-hidden">
     <div
       class="h-full w-full rounded-[32px] relative "
       style="
@@ -15,7 +15,7 @@
       ">
         <div
           class="text-white font-bold font-anton
-          text-3xl sm:text-4xl md:text-5xl
+         text-5xl
           leading-tight
           mb-4
           transform scale-x-100 scale-y-100
@@ -37,7 +37,7 @@
         </div>
 
         <div class="
-          text-sm sm:text-base md:text-lg
+          text-base md:text-lg
           text-white font-semibold
           max-w-xs sm:max-w-sm md:max-w-md
           mt-8

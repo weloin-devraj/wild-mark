@@ -1,7 +1,7 @@
 <template>
-  <div class="p-8  mt-4 max-w-sm   ">
-    <div class="head bg-white rounded-xl w-[420px] p-4 shadow-sm">
-      <div class="flex gap-2 items-center">
+  <div class="lg:p-8 md:p-3  mt-4 max-w-sm   ">
+    <div class="head bg-white rounded-xl md:w-[420px] w-[350px] p-4 shadow-sm">
+      <div class="flex gap-2 items-center justify-center">
         <span class="headdot flex gap-2">
           <svg
             class="fill-slate-500   w-7 h-7 outline-none rounded-full p-1 outline-slate-300  "

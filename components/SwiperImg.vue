@@ -1,14 +1,14 @@
 <template>
-  <div class="flex-1 min-w-0">
+  <div class="flex-1 min-w-0 ml-8 md:ml-20 lg:ml-0">
     <img
       class="w-auto h-[180px] sm:h-[200px] md:h-[250px] object-cover rounded-xl shadow-lg"
       :src="image_url"
       alt=""
     />
 
-    <div class="items-center justify-end mt-5">
+    <div class="items-center justify-end mt-5 ">
       <button
-        class="text-xl  text-[#EADE49] font-bold flex uppercase gap-32"
+        class="text-xl  text-[#EADE49] font-bold flex uppercase gap-4 md:gap-32"
       >
         {{ title ? title : "send props"
         }}<svg

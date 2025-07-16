@@ -4,3 +4,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.primary-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

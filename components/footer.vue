@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <div class="min-h-screen relative p-4 sm:p-8 md:p-12 lg:p-20 text-white  "
+  <div class=" ">
+    <div class="min-h-screen relative p-4 sm:p-8 md:p-12 lg:p-20 text-white primary-padding "
     style="background:  linear-gradient(90deg,rgba(14, 28, 53, 1) 39%, rgba(14, 28, 53, 0.48) 79%, rgba(14, 28, 53, 1) 100%);">
       <div class="absolute z-[-10] top-0 left-0 right-0 bottom-0 bg-[#0E1C35] ">
         <img

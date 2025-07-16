@@ -5,32 +5,32 @@
 
 <template>
   <div
-    class="min-h-screen overflow-x-hidden overflow-y-hidden relative bg-[#EDECE3] p-16"
+    class="min-h-screen overflow-x-hidden overflow-y-hidden relative bg-[#EDECE3] primary-padding py-16"
   >
-    <div class="headingSection flex items-center justify-between">
-      <div class="heading font-anton text-8xl scale-y-[65%] text-[#47290A]">
+    <div class="headingSection flex flex-col lg:flex-row items-center justify-between">
+      <div class="heading font-anton text-8xl scale-y-[65%] text-[#47290A] text-center md:text-start md:trxt-start">
         HUNTING & <br />
         CAMPING GEARS
       </div>
 
-      <div class="description scale-x-90 text-xl text-[#321D06]">
+      <div class="description scale-x-90 text-xl text-[#321D06] text-center md:text-start">
         By <span class="font-bold">hunting and camping</span> gears with <br />
         discounts, earn reward points on every <br />dollar you spend.
       </div>
 
       <div class="button">
         <button
-          class="text-xl m-3 font-bold text-[#321D06] bg-white py-4 px-8 rounded-full"
+          class="md:text-xl md:m-3 m-1 font-bold text-[#321D06] bg-white py-1 text-xs md:py-4 md:px-8 px-1 rounded-full"
         >
           ON SALE
         </button>
         <button
-          class="text-xl m-3 font-bold text-white bg-[#321D06] py-4 px-8 rounded-full"
+          class="md:text-xl md:m-3 m-1 font-bold text-white bg-[#321D06] py-1 text-xs md:py-4 md:px-8 px-1 rounded-full"
         >
           FEATURED
         </button>
         <button
-          class="text-xl m-3 font-bold text-[#321D06] bg-white py-4 px-8 rounded-full"
+          class="md:text-xl md:m-3 m-1 font-bold text-[#321D06] bg-white py-1 text-xs md:py-4 md:px-8 px-1 rounded-full"
         >
           NEW
         </button>
@@ -42,6 +42,7 @@
         picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh7q2Hay9RIT8P1749cPO7eymoO4BHN8Qdhw&s"
         heading="Demo product" 
         :selected="n==2?'yes':'no'"
+         
         />
       </div>
     </div>
